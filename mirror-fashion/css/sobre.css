@@ -1,0 +1,105 @@
+body {
+  color: #333333;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+section {
+  margin-bottom:30px;
+}
+
+section h1 {
+  background-image: url(../img/sobre-background.jpg);
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section h2 {
+  border-bottom: 2px solid #333333;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section p {
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-indent: 20px;
+}
+
+section p:first-letter {
+  font-weight: bold;
+}
+
+section h1 + p {
+  text-indent: 0;
+}
+
+section:not(p) + p:first-line {
+  font-variant: small-caps;
+}
+
+figure {
+  background-color: #F2EDED;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+li {
+  margin-top: 10px;
+  margin-left: 30px;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+#centro-distribuicao {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 550px;
+}
+#centro-distribuicao img {
+  width: 100%;
+}
+
+#familia-pelho {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+#rodape {
+  color: #777;
+  margin: 30px 0;
+  padding: 30px 0;
+}
+
+#rodape img {
+  margin-right: 30px;
+  vertical-align: middle;
+  width: 94px;
+}
+
+@media (max-width: 485px) {
+  #familia-pelho {
+    float: none;
+    max-width: 550px;
+    display: inline-block;
+  }
+
+  .familia-pelho-section {
+    text-align: center;
+  }
+
+  .familia-pelho-section h2,
+  .familia-pelho-section p {
+    text-align: left;
+  }
+}
